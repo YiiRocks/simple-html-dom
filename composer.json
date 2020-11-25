@@ -2,7 +2,14 @@
     "name": "yiirocks/simple-html-dom",
     "description": "Simple Html Dom Parser for Yii",
     "type": "yii3-extension",
-    "keywords": ["yii", "yii3", "extension", "dom", "html-dom-parser", "html-parser"],
+    "keywords": [
+        "yii",
+        "yii3",
+        "extension",
+        "dom",
+        "html-dom-parser",
+        "html-parser"
+    ],
     "homepage": "https://www.yii.rocks/simple-html-dom/",
     "license": "MIT",
     "minimum-stability": "dev",
@@ -28,8 +35,7 @@
         "phpmd/phpmd": "@stable",
         "phpunit/phpunit": "^9.0",
         "squizlabs/php_codesniffer": "^3.5",
-        "yiisoft/di": "^3.0",
-        "yiisoft/log": "^3.0"
+        "yiisoft/di": "^3.0"
     },
     "autoload-dev": {
         "psr-4": {
@@ -60,11 +66,6 @@
         },
         "config-plugin": {
             "common": "config/common.php"
-        },
-        "config-plugin-dev": {
-            "web": [
-                "config/test.php"
-            ]
         }
     },
     "config": {
