@@ -20,14 +20,16 @@ composer require yiirocks/simple-html-dom
 ```php
 use voku\helper\DomParserInterface;
 
-private DomParserInterface $dom;
+class Class {
+    private DomParserInterface $dom;
 
-__construct(DomParserInterface $dom) {
-	$this->dom = $dom;
+    __construct(DomParserInterface $dom) {
+            $this->dom = $dom;
+    }
 }
 ```
 
-Available options can be found in the [examples](https://github.com/voku/simple_html_dom/tree/master/example).
+Available options can be found in the [API Readme](https://github.com/voku/simple_html_dom/blob/master/README_API.md).
 
 ## Unit testing
 
