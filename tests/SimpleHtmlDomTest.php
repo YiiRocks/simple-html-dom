@@ -4,7 +4,7 @@ namespace YiiRocks\SimpleHtmlDom\tests;
 
 class SimpleHtmlDomTest extends TestCase
 {
-    public function testBasic(): void
+    public function testBasicDomParser(): void
     {
         $in = '<img src="blank.gif" alt="Test" width="42" height="42">';
         $out = '<img src="blank.gif" alt="Test" class="img-fluid">';

@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-use voku\helper\DomParserInterface;
-use voku\helper\HtmlDomParser;
+use YiiRocks\SimpleHtmlDom\SimpleHtmlDomInterface;
+use YiiRocks\SimpleHtmlDom\SimpleHtmlDom;
 
 return [
-    DomParserInterface::class => static function () {
-        return new HtmlDomParser();
+    SimpleHtmlDomInterface::class => static function () {
+        return new SimpleHtmlDom();
     },
 ];

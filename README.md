@@ -1,6 +1,6 @@
 # Simple Html Dom Parser for Yii
 
-This extension configures [voku\helper\DomParserInterface](https://github.com/voku/simple_html_dom)
+This extension configures [voku/simple_html_dom](https://github.com/voku/simple_html_dom)
 
 [![Packagist Version](https://img.shields.io/packagist/v/yiirocks/simple-html-dom.svg)](https://packagist.org/packages/yiirocks/simple-html-dom)
 [![PHP from Packagist](https://img.shields.io/packagist/php-v/yiirocks/simple-html-dom.svg)](https://php.net/)
@@ -18,12 +18,12 @@ composer require yiirocks/simple-html-dom
 ## Usage
 
 ```php
-use voku\helper\DomParserInterface;
+use YiiRocks\SimpleHtmlDom\SimpleHtmlDomInterface;
 
 class Class {
-    private DomParserInterface $dom;
+    private SimpleHtmlDomInterface $dom;
 
-    __construct(DomParserInterface $dom) {
+    __construct(SimpleHtmlDomInterface $dom) {
             $this->dom = $dom;
     }
 }
