@@ -6,7 +6,7 @@ use YiiRocks\SimpleHtmlDom\SimpleHtmlDomInterface;
 use YiiRocks\SimpleHtmlDom\SimpleHtmlDom;
 
 return [
-    SimpleHtmlDomInterface::class => static function () {
-        return new SimpleHtmlDom();
-    },
+    SimpleHtmlDomInterface::class => [
+        '__class' => SimpleHtmlDom::class,
+    ],
 ];
