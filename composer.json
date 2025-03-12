@@ -26,17 +26,16 @@
         "source": "https://github.com/YiiRocks/simple-html-dom/tree/master"
     },
     "require": {
-        "php": ">=7.4.0",
-        "voku/simple_html_dom": "^4.7",
-        "yiisoft/composer-config-plugin": "^1.0"
+        "php": ">=8.1.0",
+        "voku/simple_html_dom": "^4.8"
     },
     "require-dev": {
-        "friendsofphp/php-cs-fixer": "^3.3",
+        "friendsofphp/php-cs-fixer": "^3.70",
         "phpmd/phpmd": "@stable",
-        "phpunit/phpunit": "^9.0",
-        "squizlabs/php_codesniffer": "^3.5",
-        "vimeo/psalm": "^4.1",
-        "yiisoft/di": "^3.0"
+        "phpunit/phpunit": "^10.5",
+        "squizlabs/php_codesniffer": "^3.11",
+        "yiisoft/config": "^1.6",
+        "yiisoft/di": "*"
     },
     "autoload": {
         "psr-4": {
@@ -70,11 +69,18 @@
         "branch-alias": {
             "dev-master": "1.0.x-dev"
         },
+        "config-plugin-options": {
+            "source-directory": "config"
+        },
         "config-plugin": {
-            "common": "config/common.php"
+            "di": "di.php",
+            "params": []
         }
     },
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "yiisoft/config": true
+        }
     }
 }

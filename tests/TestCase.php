@@ -6,8 +6,10 @@ namespace YiiRocks\SimpleHtmlDom\tests;
 
 use Psr\Container\ContainerInterface;
 use YiiRocks\SimpleHtmlDom\SimpleHtmlDomInterface;
-use Yiisoft\Composer\Config\Builder;
+use Yiisoft\Config\Config;
+use Yiisoft\Config\ConfigPaths;
 use Yiisoft\Di\Container;
+use Yiisoft\Di\ContainerConfig;
 
 abstract class TestCase extends \PHPUnit\Framework\TestCase
 {
@@ -17,8 +19,14 @@ abstract class TestCase extends \PHPUnit\Framework\TestCase
     protected function setUp(): void
     {
         parent::setUp();
-        $config = require Builder::path('common');
-        $this->container = new Container($config);
+        $config = new Config(
+            new ConfigPaths(dirname(__DIR__), 'config'),
+        );
+        $containerConfig = ContainerConfig::create()
+            ->withDefinitions(
+                $config->get('di')
+            );
+        $this->container = new Container($containerConfig);
         $this->dom = $this->container->get(SimpleHtmlDomInterface::class);
     }
 }

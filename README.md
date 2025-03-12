@@ -42,4 +42,4 @@ The package is tested with [PHPUnit](https://phpunit.de/). To run tests:
 [![Code Climate maintainability](https://img.shields.io/codeclimate/maintainability/YiiRocks/simple-html-dom.svg)](https://codeclimate.com/github/YiiRocks/simple-html-dom/maintainability)
 [![Codacy branch grade](https://img.shields.io/codacy/grade/b82875701bf54191b7a86069d724f013/master.svg)](https://app.codacy.com/gh/YiiRocks/simple-html-dom)
 [![Scrutinizer code quality (GitHub/Bitbucket)](https://img.shields.io/scrutinizer/quality/g/yiirocks/simple-html-dom/master.svg)](https://scrutinizer-ci.com/g/yiirocks/simple-html-dom/?branch=master)
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/yiirocks/simple-html-dom/analysis)
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/YiiRocks/simple-html-dom/analysis.yml?branch=master)

@@ -1,22 +1,24 @@
 <?php
-return PhpCsFixer\Config::create()
+$finder = PhpCsFixer\Finder::create()
+    ->in(__DIR__)
+;
+
+$config = new PhpCsFixer\Config();
+return $config
     ->setUsingCache(false)
     ->setRiskyAllowed(true)
     ->setRules([
         '@PSR2' => true,
         'ordered_class_elements' => [
-            'sortAlgorithm' => 'alpha',
+            'sort_algorithm' => 'alpha',
         ],
         'no_unused_imports' => true,
         'ordered_imports' => [
             'imports_order' => [
-                'class', 'function', 'const',
+                'const', 'class', 'function',
             ],
-            'sortAlgorithm' => 'alpha',
+            'sort_algorithm' => 'alpha',
         ],
     ])
-    ->setFinder(
-        PhpCsFixer\Finder::create()
-            ->in(__DIR__)
-    )
+    ->setFinder($finder)
 ;
